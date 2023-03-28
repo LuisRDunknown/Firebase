@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Directorio</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="/">
+                DIRECTORIO
+              </a>
+            </div>
+          </nav>
+    </header>
+    <main class="main-content">
+        <div class="crud-container">
+            <div class="crud-header">
+                <h1>Guardar datos de una persona</h1>
+                <button class="button is-success" id="openRegister">
+                    <span>Nuevo</span>
+                </button>
+            </div>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th>Nombre</th>
+                    <th>Apellido Paterno</th>
+                    <th>Apellido Materno</th>
+                    <th>Direccion</th>
+                    <th>Telefono</th>
+                    <th>Cuidad</th>
+                    <th>Estado</th>
+                    <th>Email</th>
+                    <th>Opciones</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>Luis</th>
+                    <td>Rangel</td>
+                    <td>Diaz</td>
+                    <td>San Luis Potosi</td>
+                    <td>4641036262</td>
+                    <td>Salamanca</td>
+                    <td>Guanjuato</td>
+                    <td>lr2315490@gmail.com</td>
+                    <td>
+                        <button class="button is-warning">Edit</button>
+                        <button class="button is-danger">Delated</button>
+                    </td>
+                </tbody>
+              </table>
+        </div>
+    </main>
+    <div class="modal" id="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Guardar Nuevo Contacto</p>
+            <button class="delete" aria-label="close" id="closeRegister"></button>
+          </header>
+          <section class="modal-card-body">
+            <form id="register-form">
+                <div class="field">
+                    <label class="label">Nombre: </label>
+                    <div class="control">
+                      <input class="input" type="text" placeholder="Ingresa el nombre">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label">Apellido Paterno: </label>
+                    <div class="control">
+                      <input class="input" type="text" placeholder="Ingresa el apellido paterno">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label">Apellido Materno: </label>
+                    <div class="control">
+                      <input class="input" type="text" placeholder="Ingresa el apellido materno">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label">Direccion: </label>
+                    <div class="control">
+                      <input class="input" type="text" placeholder="Ingresa la dirección">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label">Telefono: </label>
+                    <div class="control">
+                      <input class="input" type="text" placeholder="Ingresa el numero de telefono">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label">Cuidad: </label>
+                    <div class="control">
+                      <input class="input" type="text" placeholder="Nombre de la cuidad">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label">Estado: </label>
+                    <div class="control">
+                      <input class="input" type="text" placeholder="Nombre del estado">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label">Correo Electronico: </label>
+                    <div class="control">
+                      <input class="input" type="text" placeholder="Ingrese el email">
+                    </div>
+                  </div>
+          </section>
+          <footer class="modal-card-foot">
+            <button type="submit" class="button is-success">Guardar</button>
+        </form>
+          </footer>
+        </div>
+      </div>
+
+      <script src="index.js"></script>
+      <script src="js/app.js"></script>
+</body>
+</html>
